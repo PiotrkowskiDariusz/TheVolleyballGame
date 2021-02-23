@@ -1,0 +1,20 @@
+#ifndef BALL_H
+#define BALL_H
+#include "Object.h"
+#include "Player.h"
+
+class Ball: public LogicObject {
+public:
+    /// \brief dodajTekst
+         /// \details Dodanie tekstu do gry.
+         /// \param text Tekst dodany do gry.
+         /// \param font_size Size of the font
+         /// \param window_width Szerokosc na ktorej zostanie umieszczony tekst.
+         /// \param y_coor Dlugosc na ktorej zostanie umieszczony tekst.
+         ///
+    Ball(int x, int y, int height, int width, Court *court, int direction, LogicObject *parent);
+    virtual void update();
+
+};
+
+#endif // BALL_H
